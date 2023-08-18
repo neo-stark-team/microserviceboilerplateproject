@@ -1,49 +1,30 @@
-using System;  
-using System.Collections;
-using System.Collections.Generic;  
-using System.Linq;  
-using System.Web;  
-namespace dotnetapp.Models  
+using System.Collections.Generic;
+
+namespace dotnetapp.Models
 {
     public interface IBookService
     {
-        public List<Book> GetBooks();
-        public Book SaveBook(Book product);
-        //public bool DeleteProduct(int Id);
-    }
-    public class BookService :IBookService
-{
-    private readonly BookRepository repository;
-
-    public BookService(BookRepository repository)
-    {
-        this.repository = repository;
+        List<Book> GetBooks();
+        Book SaveBook(Book book);
     }
 
-    public Book SaveBook(Book product)
+    public class BookService : IBookService
     {
-        return repository.AddBook(product);
-    }
+        private readonly BookRepository repository;
 
-    public List<Book> GetBooks()
-    {
-        return repository.GetAllBooks();
-    }
+        public BookService(BookRepository repository)
+        {
+            this.repository = repository;
+        }
 
-    /*public Product GetProductById(int id)
-    {
-        return repository.FindById(id);
-    }
+        public Book SaveBook(Book book)
+        {
+            return repository.AddBook(book); // Corrected parameter name here
+        }
 
-    public string DeleteProduct(int id)
-    {
-        repository.Delete(id);
-        return "Product removed !! " + id;
+        public List<Book> GetBooks()
+        {
+            return repository.GetAllBooks();
+        }
     }
-
-    public Product UpdateProduct(Product product)
-    {
-        return repository.Update(product);
-    }*/
-}
 }
