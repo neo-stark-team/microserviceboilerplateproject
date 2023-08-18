@@ -8,9 +8,9 @@ public class BookController : ControllerBase
 {    
     private readonly BookService service;
 
-    public BookController(BookService service)
+    public BookController(BookService _bookService)
     {
-        this.service = service;
+        this.service = _bookService;
     }
 
     [HttpPost]

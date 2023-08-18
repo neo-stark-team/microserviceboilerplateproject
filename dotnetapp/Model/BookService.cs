@@ -5,6 +5,12 @@ using System.Linq;
 using System.Web;  
 namespace dotnetapp.Models  
 {
+    public interface IBookService
+    {
+        public IEnumerable<Book> GetBookList();
+        public bool AddBook(Product product);
+        //public bool DeleteProduct(int Id);
+    }
     public class BookService
 {
     private BookRepository repository;
