@@ -11,5 +11,17 @@ public class BookController : ControllerBase
     {
        this.bookService = _bookService;
     }
-    
+    //GET /api/books:
+    [HttpGet("/api/books/")]
+    public IEnumerable<Book> GetAll()
+    {
+        var bookList = bookService.GetAll();
+        return bookList;
+    }
+
+    [HttpPost("/api/books/")]
+    public bool AddBook(Book newBook)
+    {         
+        return bookService.Add(newBook);
+    } 
 }
