@@ -8,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<BookService>();
+builder.Services.AddScoped<BookRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
