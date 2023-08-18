@@ -7,13 +7,13 @@ namespace dotnetapp.Models
 {
     public interface IBookService
     {
-        public IEnumerable<Book> GetBookList();
-        public bool AddBook(Product product);
+        public List<Book> GetBooks();
+        public Book SaveBook(Book product);
         //public bool DeleteProduct(int Id);
     }
-    public class BookService
+    public class BookService :IBookService
 {
-    private BookRepository repository;
+    private readonly BookRepository repository;
 
     public BookService(BookRepository repository)
     {
