@@ -6,23 +6,19 @@ namespace dotnetapp.Controllers;
 [Route("[controller]")]
 public class BookController : ControllerBase
 {
-    static readonly IBookRepository bookService = new BookRepository();
-    public BookController(IBookRepository _bookService)
-    {
-       this.bookService = _bookService;
-    }
+    
     //GET /api/books:
     [HttpGet("/api/books/")]
     public IEnumerable<Book> GetAll()
     {
-        var bookList = bookService.GetAll();
+        var bookList = new List<Book>();
         return bookList;
     }
 
     [HttpPost("/api/books/")]
     public bool AddBook(Book newBook)
     {        
-        newBook= bookService.AddBook(newBook);
-        return 
+       
+        return true;
     } 
 }

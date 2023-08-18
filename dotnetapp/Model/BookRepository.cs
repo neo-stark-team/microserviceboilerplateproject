@@ -1,12 +1,13 @@
 using System;  
+using System.Collections;
 using System.Collections.Generic;  
 using System.Linq;  
 using System.Web;  
 namespace dotnetapp.Models  
 {  
-    public class BookRepository :IBookRepository  
+    public class BookRepository
     {  
-        private List<Book> books = new ArrayList<Book>();  
+        private List<Book> books = new List<Book>();  
 
         public List<Book> getAllBooks()
         {
