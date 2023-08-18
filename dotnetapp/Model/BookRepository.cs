@@ -9,7 +9,7 @@ namespace dotnetapp.Models
     {  
         private List<Book> books = new List<Book>();  
 
-        public List<Book> getAllBooks()
+        public List<Book> GetAllBooks()
         {
             return books;
         }

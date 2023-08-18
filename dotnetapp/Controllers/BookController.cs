@@ -5,20 +5,25 @@ namespace dotnetapp.Controllers;
 [ApiController]
 [Route("[controller]")]
 public class BookController : ControllerBase
-{
-    
-    //GET /api/books:
-    [HttpGet("/api/books/")]
-    public IEnumerable<Book> GetAll()
+{    
+    private readonly BookService service;
+
+    public BookController(BookService service)
     {
-        var bookList = new List<Book>();
-        return bookList;
+        this.service = service;
     }
 
-    [HttpPost("/api/books/")]
-    public bool AddBook(Book newBook)
-    {        
-       
-        return true;
-    } 
+    [HttpPost]
+    public ActionResult<Product> AddProduct([FromBody] Product product)
+    {
+        var addedProduct = service.SaveProduct(product);
+        return Ok(addedProduct);
+    }
+
+    [HttpGet]
+    public ActionResult<List<Product>> FindAllProducts()
+    {
+        var products = service.GetProducts();
+        return Ok(products);
+    }
 }
