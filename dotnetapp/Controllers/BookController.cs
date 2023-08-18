@@ -14,16 +14,16 @@ public class BookController : ControllerBase
     }
 
     [HttpPost]
-    public ActionResult<Product> AddProduct([FromBody] Product product)
+    public ActionResult<Book> AddBook([FromBody] Book Book)
     {
-        var addedProduct = service.SaveProduct(product);
-        return Ok(addedProduct);
+        var addedBook = service.SaveBook(Book);
+        return Ok(addedBook);
     }
 
     [HttpGet]
-    public ActionResult<List<Product>> FindAllProducts()
+    public ActionResult<List<Book>> FindAllBooks()
     {
-        var products = service.GetProducts();
-        return Ok(products);
+        var Books = service.GetBooks();
+        return Ok(Books);
     }
 }
