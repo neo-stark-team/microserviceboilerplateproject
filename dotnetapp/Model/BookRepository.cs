@@ -8,7 +8,7 @@ namespace dotnetapp.Models
     {  
         private List<Book> books = new List<Book>();  
         private int _nextId = 1;  
-        public IItemRepostory()  
+        public BookRepository()  
         {  
             Add(new Book { Name = "Book1", Category = "Fiction", Price = 100});  
             Add(new Book { Name = "Book2", Category = "Story", Price = 150 });  

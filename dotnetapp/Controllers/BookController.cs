@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
+using dotnetapp.Models;
 namespace dotnetapp.Controllers;
 
 [ApiController]
@@ -7,10 +7,10 @@ namespace dotnetapp.Controllers;
 public class BookController : ControllerBase
 {
     static readonly IBookRepository bookService = new BookRepository();
-    public BookController(IBookRepository _bookService)
+    /*public BookController(IBookRepository _bookService)
     {
        this.bookService = _bookService;
-    }
+    }*/
     //GET /api/books:
     [HttpGet("/api/books/")]
     public IEnumerable<Book> GetAll()
