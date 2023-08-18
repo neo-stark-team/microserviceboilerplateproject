@@ -16,10 +16,7 @@ namespace dotnetapp.Models
         public Book AddBook(Book newBook)
         {
             Book book = new Book();
-            book.BookId(newBook.BookId());
-            book.BookName(newBook.BookName());
-            book.Category(newBook.Category());
-            book.Price(newBook.Price());
+            book.BookId=newBook.BookId;
             books.add(book);
             return book;
         }
