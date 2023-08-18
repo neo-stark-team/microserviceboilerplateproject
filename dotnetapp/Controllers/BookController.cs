@@ -21,7 +21,8 @@ public class BookController : ControllerBase
 
     [HttpPost("/api/books/")]
     public bool AddBook(Book newBook)
-    {         
-        return bookService.Add(newBook);
+    {        
+        newBook= bookService.AddBook(newBook);
+        return 
     } 
 }
