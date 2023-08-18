@@ -6,10 +6,10 @@ namespace dotnetapp.Controllers;
 [Route("[controller]")]
 public class BookController : ControllerBase
 {
-    static readonly IBookRepository bookrepo = new BookRepository();
-    public IEnumerable<Book> GetALLBooks()
+    static readonly IBookRepository bookService = new BookRepository();
+    public BookController(IBookRepository _bookService)
     {
-        
+       this.bookService = _bookService;
     }
     
 }
