@@ -10,33 +10,33 @@ namespace dotnetapp.Models
         private int _nextId = 1;  
         public BookRepository()  
         {  
-            Add(new Book { Name = "Book1", Category = "Fiction", Price = 100});  
-            Add(new Book { Name = "Book2", Category = "Story", Price = 150 });  
-            Add(new Book { Name = "Book3", Category = "Fiction", Price = 200});  
+            AddBook(new Book { Name = "Book1", Category = "Fiction", Price = 100});  
+            AddBook(new Book { Name = "Book2", Category = "Story", Price = 150 });  
+            AddBook(new Book { Name = "Book3", Category = "Fiction", Price = 200});  
         }  
         public IEnumerable<Book> GetAll()  
         {  
             return books;  
         }  
-        public Book Get(int id)  
+        public Book GetBook(int id)  
         {  
             return books.Find(p => p.Id == id);  
         }  
-        public Book Add(Book item)  
+        public Book AddBook(Book item)  
         {  
             if (item == null)  
             {  
                 throw new ArgumentNullException("item");  
             }  
             item.Id = _nextId++;  
-            books.Add(item);  
+            books.AddBook(item);  
             return item;  
         }  
-        public void Remove(int id)  
+        public void RemoveBook(int id)  
         {  
             books.RemoveAll(p => p.Id == id);  
         }  
-        public bool Update(Book item)  
+        public bool UpdateBook(Book item)  
         {  
             if (item == null)  
             {  
@@ -48,7 +48,7 @@ namespace dotnetapp.Models
                 return false;  
             }  
             books.RemoveAt(index);  
-            books.Add(item);  
+            books.AddBook(item);  
             return true;  
         }  
     }  

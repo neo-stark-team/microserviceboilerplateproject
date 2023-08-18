@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;  
 namespace dotnetapp.Models  
 {  
-    interface IBookRepository  
+    public interface IBookRepository  
     {  
         IEnumerable<Book> GetAll();  
-        Book Get(int id);  
-        Book Add(Book bookObj);  
-        void Remove(int id);  
-        bool Update(Book bookObj);  
+        Book GetBook(int id);  
+        Book AddBook(Book bookObj);  
+        void RemoveBook(int id);  
+        bool UpdateBook(Book bookObj);  
     }  
 } 
