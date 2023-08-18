@@ -7,7 +7,7 @@ namespace dotnetapp.Models
 {  
     public class BookRepository
     {  
-        private List<Book> books = new List<Book>();  
+        private static List<Book> books = new List<Book>();  
 
         public List<Book> GetAllBooks()
         {

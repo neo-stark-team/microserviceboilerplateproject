@@ -10,7 +10,7 @@ namespace dotnetapp.Models
 
     public class BookService : IBookService
     {
-        private readonly BookRepository repository;
+        private BookRepository repository;
 
         public BookService(BookRepository repository)
         {
