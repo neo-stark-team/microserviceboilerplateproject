@@ -10,17 +10,17 @@ namespace dotnetapp.Models
         private int _nextId = 1;  
         public IItemRepostory()  
         {  
-            Add(new Book { Name = "Tomato", Category = "Vagitable", Price = 100});  
-            Add(new Book { Name = "Apple", Category = "Fruit", Price = 150 });  
-            Add(new Book { Name = "Suit", Category = "Cloth", Price = 200});  
+            Add(new Book { Name = "Book1", Category = "Fiction", Price = 100});  
+            Add(new Book { Name = "Book2", Category = "Story", Price = 150 });  
+            Add(new Book { Name = "Book3", Category = "Fiction", Price = 200});  
         }  
         public IEnumerable<Book> GetAll()  
         {  
-            return items;  
+            return books;  
         }  
         public Book Get(int id)  
         {  
-            return items.Find(p => p.Id == id);  
+            return books.Find(p => p.Id == id);  
         }  
         public Book Add(Book item)  
         {  
@@ -29,12 +29,12 @@ namespace dotnetapp.Models
                 throw new ArgumentNullException("item");  
             }  
             item.Id = _nextId++;  
-            items.Add(item);  
+            books.Add(item);  
             return item;  
         }  
         public void Remove(int id)  
         {  
-            items.RemoveAll(p => p.Id == id);  
+            books.RemoveAll(p => p.Id == id);  
         }  
         public bool Update(Book item)  
         {  
@@ -42,13 +42,13 @@ namespace dotnetapp.Models
             {  
                 throw new ArgumentNullException("item");  
             }  
-            int index = items.FindIndex(p => p.Id == item.Id);  
+            int index = books.FindIndex(p => p.Id == item.Id);  
             if (index == -1)  
             {  
                 return false;  
             }  
-            items.RemoveAt(index);  
-            items.Add(item);  
+            books.RemoveAt(index);  
+            books.Add(item);  
             return true;  
         }  
     }  
