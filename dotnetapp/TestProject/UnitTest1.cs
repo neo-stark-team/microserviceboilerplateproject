@@ -1,30 +1,42 @@
-// using Microsoft.Extensions.Logging.Abstractions.Testing;
-// using NUnit.Framework;
-// using dotnetapp.Models;
-// using dotnetapp.Controllers;
+using Microsoft.Extensions.Logging;
+using Moq;
+using NUnit.Framework;
+using dotnetapp.Controllers;
+using dotnetapp.Models;
 
-// [TestFixture]
-// public class CategoriesControllerTests
-// {
-//     private CategoriesController _controller;
-//     private MockLogger<CategoriesController> _logger;
+[TestFixture]
+public class CategoriesControllerTests
+{
+    private CategoriesController _controller;
+    private Mock<ILogger<CategoriesController>> _loggerMock;
 
-//     [SetUp]
-//     public void Setup()
-//     {
-//         _logger = new MockLogger<CategoriesController>();
-//         _controller = new CategoriesController(_logger.Logger);
-//     }
+    [SetUp]
+    public void Setup()
+    {
+        _loggerMock = new Mock<ILogger<CategoriesController>>();
+        _controller = new CategoriesController(_loggerMock.Object);
+    }
 
-//     [Test]
-//     public void TestCategoryCreationLogging()
-//     {
-//         // Perform the action that triggers logging.
-//         var category = new Category { Name = "Test Category" };
-//         var result = _controller.PostCategory(category);
+    [Test]
+    public void TestCategoryCreationLogging()
+    {
+        // Arrange
+        var category = new Category { Name = "Test Category" };
 
-//         // Assert log messages
-//         Assert.IsTrue(_logger.HasLog(LogLevel.Information, "Category created successfully."));
-//         Assert.IsFalse(_logger.HasLog(LogLevel.Error, "Error creating category."));
-//     }
-// }
+        // Act
+        var result = _controller.PostCategory(category);
+
+        // Assert
+        // You can add any necessary assertions on the result here
+
+        // Verify log messages
+        _loggerMock.Verify(
+            logger => logger.LogInformation("Category created successfully."),
+            Times.Once);
+
+        // You can also verify other log levels if needed
+        _loggerMock.Verify(
+            logger => logger.LogError(It.IsAny<string>()),
+            Times.Never);
+    }
+}
