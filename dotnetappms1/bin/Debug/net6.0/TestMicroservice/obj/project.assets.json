@@ -1075,6 +1075,22 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "msdotnetapp2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Swashbuckle.AspNetCore": "6.2.3"
+        },
+        "compile": {
+          "bin/placeholder/msdotnetapp2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/msdotnetapp2.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -4188,6 +4204,11 @@
       "type": "project",
       "path": "../dotnetappms1.csproj",
       "msbuildProject": "../dotnetappms1.csproj"
+    },
+    "msdotnetapp2/1.0.0": {
+      "type": "project",
+      "path": "../msdotnetapp2/msdotnetapp2.csproj",
+      "msbuildProject": "../msdotnetapp2/msdotnetapp2.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4197,7 +4218,8 @@
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
       "coverlet.collector >= 3.1.2",
-      "dotnetappms1 >= 1.0.0"
+      "dotnetappms1 >= 1.0.0",
+      "msdotnetapp2 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4227,6 +4249,9 @@
           "projectReferences": {
             "/home/coder/project/workspace/dotnetappms1/dotnetappms1.csproj": {
               "projectPath": "/home/coder/project/workspace/dotnetappms1/dotnetappms1.csproj"
+            },
+            "/home/coder/project/workspace/dotnetappms1/msdotnetapp2/msdotnetapp2.csproj": {
+              "projectPath": "/home/coder/project/workspace/dotnetappms1/msdotnetapp2/msdotnetapp2.csproj"
             }
           }
         }

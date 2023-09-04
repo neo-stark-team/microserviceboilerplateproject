@@ -5,11 +5,6 @@
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/appsettings.json
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/appsettings.Development.json
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/appsettings.json
-/home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/bin/Debug/net6.0/appsettings.Development.json
-/home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/bin/Debug/net6.0/appsettings.json
-/home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/bin/Debug/net6.0/msdotnetapp2.deps.json
-/home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/bin/Debug/net6.0/msdotnetapp2.runtimeconfig.json
-/home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/obj/Debug/net6.0/staticwebassets.build.json
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/obj/msdotnetapp2.csproj.nuget.dgspec.json
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/obj/project.assets.json
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/msdotnetapp2/Properties/launchSettings.json
@@ -111,8 +106,6 @@
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/bin/Debug/net6.0/dotnetappms1.pdb
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/obj/Debug/net6.0/TestMicroservice.csproj.AssemblyReference.cache
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/obj/Debug/net6.0/TestMicroservice.GeneratedMSBuildEditorConfig.editorconfig
-/home/coder/project/workspace/dotnetappms1/TestMicroservice/obj/Debug/net6.0/TestMicroservice.AssemblyInfoInputs.cache
-/home/coder/project/workspace/dotnetappms1/TestMicroservice/obj/Debug/net6.0/TestMicroservice.AssemblyInfo.cs
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/obj/Debug/net6.0/TestMicroservice.csproj.CoreCompileInputs.cache
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/obj/Debug/net6.0/TestMicroservice.csproj.CopyComplete
 /home/coder/project/workspace/dotnetappms1/TestMicroservice/obj/Debug/net6.0/TestMicroservice.dll

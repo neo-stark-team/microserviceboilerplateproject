@@ -4,7 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
+ <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -18,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dotnetappms1.csproj" />
+    <ProjectReference Include="..\msdotnetapp2\msdotnetapp2.csproj" />
   </ItemGroup>
 
 </Project>

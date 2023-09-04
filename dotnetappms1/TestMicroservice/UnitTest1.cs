@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 using dotnetappms1.Controllers;
+using msdotnetapp2.Controllers;
 
 namespace dotnetappms1.Tests
 {
@@ -26,5 +27,6 @@ namespace dotnetappms1.Tests
 
             // You can add more specific assertions if needed, e.g., check the properties of each student.
         }
+        
     }
 }

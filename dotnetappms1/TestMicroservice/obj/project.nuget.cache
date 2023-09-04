@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "STLukgCOyNdSWt3KAqnFYo+cjcsxKQSog2YIeHVY7zstGm6smK48Tm1B2SOAt4UOQvRMoV2Hpp0+ComS+ANQWA==",
+  "dgSpecHash": "gPv06P0EBaJe5TY07xHRoDUVlXd21E3o9M0KIsm8uXp7uYWoSGpMPpReMiprApsmFyURglObTX5D00EvfLLlSw==",
   "success": true,
   "projectFilePath": "/home/coder/project/workspace/dotnetappms1/TestMicroservice/TestMicroservice.csproj",
   "expectedPackageFiles": [
