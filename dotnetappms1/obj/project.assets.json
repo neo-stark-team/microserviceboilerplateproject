@@ -26,6 +26,19 @@
           }
         }
       },
+      "NUnit/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -136,6 +149,30 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "NUnit/3.0.0": {
+      "sha512": "Jmy5XR04eXxHR0vkh1JC1EeohkoOtWo+0RGKH4eQ9jwBmjStS6MqlSmLIIqrluQ5yWVJ01UsH2//YQt3HjNWTA==",
+      "type": "package",
+      "path": "nunit/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.txt",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "lib/dotnet/nunit.framework.dll",
+        "lib/dotnet/nunit.framework.xml",
+        "lib/net20/nunit.framework.dll",
+        "lib/net20/nunit.framework.xml",
+        "lib/net40/nunit.framework.dll",
+        "lib/net40/nunit.framework.xml",
+        "lib/net45/nunit.framework.dll",
+        "lib/net45/nunit.framework.xml",
+        "lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.dll",
+        "lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.xml",
+        "nunit.3.0.0.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "sha512": "cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
       "type": "package",
@@ -220,6 +257,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "NUnit >= 3.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -260,6 +298,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
@@ -287,5 +329,17 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NUnit 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

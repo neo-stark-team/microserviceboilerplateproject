@@ -1,15 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "296Bhb0I3dg+mv44B7v2Q5ZUz7sB0rQsSH3tv1zCqk3cRtoTd1eiRYfn01dBZDXXSW/5V5Hrh4InI6no0QTrNw==",
+  "dgSpecHash": "UNmMOEvTVUerRsenQSmKxsZileGjDvEozLX7zARIwQPX8niGjKelOJHjBQFVhYjBqVTljpGQXFo5hRfxH/OcPg==",
   "success": true,
   "projectFilePath": "/home/coder/project/workspace/dotnetappms1/dotnetappms1.csproj",
   "expectedPackageFiles": [
     "/home/coder/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/coder/.nuget/packages/nunit/3.0.0/nunit.3.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/home/coder/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/home/coder/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/home/coder/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NUnit 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

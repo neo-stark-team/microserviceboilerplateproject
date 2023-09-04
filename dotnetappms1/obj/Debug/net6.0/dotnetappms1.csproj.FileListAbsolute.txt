@@ -33,3 +33,6 @@
 /home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.pdb
 /home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.genruntimeconfig.cache
 /home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/ref/dotnetappms1.dll
+/home/coder/project/workspace/dotnetappms1/bin/Debug/net6.0/TestMicroservice/obj/project.assets.json
+/home/coder/project/workspace/dotnetappms1/bin/Debug/net6.0/TestMicroservice/obj/TestMicroservice.csproj.nuget.dgspec.json
+/home/coder/project/workspace/dotnetappms1/bin/Debug/net6.0/nunit.framework.dll
