@@ -1,4 +1,12 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+
+partial class Program
+{
+    static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -23,3 +31,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+    }
+}
