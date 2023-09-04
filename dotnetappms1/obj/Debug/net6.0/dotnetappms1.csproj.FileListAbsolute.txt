@@ -1,0 +1,7 @@
+/home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.csproj.AssemblyReference.cache
+/home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.GeneratedMSBuildEditorConfig.editorconfig
+/home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.AssemblyInfoInputs.cache
+/home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.AssemblyInfo.cs
+/home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.csproj.CoreCompileInputs.cache
+/home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.MvcApplicationPartsAssemblyInfo.cs
+/home/coder/project/workspace/dotnetappms1/obj/Debug/net6.0/dotnetappms1.MvcApplicationPartsAssemblyInfo.cache
