@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dotnetappms1.csproj" />
-    <ProjectReference Include="..\msdotnetapp2\msdotnetapp2.csproj" />
   </ItemGroup>
 
 </Project>
