@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetappms1", "dotnetappms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "msdotnetapp2", "msdotnetapp2\msdotnetapp2.csproj", "{9DAA6A2A-6C87-4263-9EFF-53AF53278D56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMicroservice", "TestMicroservice\TestMicroservice.csproj", "{36CEAF8D-E269-4521-974E-1008544D7631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{9DAA6A2A-6C87-4263-9EFF-53AF53278D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DAA6A2A-6C87-4263-9EFF-53AF53278D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DAA6A2A-6C87-4263-9EFF-53AF53278D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CEAF8D-E269-4521-974E-1008544D7631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CEAF8D-E269-4521-974E-1008544D7631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CEAF8D-E269-4521-974E-1008544D7631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CEAF8D-E269-4521-974E-1008544D7631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
