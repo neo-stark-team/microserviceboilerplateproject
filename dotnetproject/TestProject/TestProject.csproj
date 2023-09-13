@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dotnetapiapp\dotnetapiapp.csproj" />
+    <ProjectReference Include="..\dotnetmvcapp\dotnetmvcapp.csproj" />
   </ItemGroup>
 
 </Project>

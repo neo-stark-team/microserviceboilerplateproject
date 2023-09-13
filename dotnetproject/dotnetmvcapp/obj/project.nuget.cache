@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "47m2p+H5rRM/MIg+Imw3J5Ce+fsnEmvAsyL7KJYd7D8+mQmy5DR8S0HMKJMkak6gXa7Pe0Ygsz4pK+O/qPShWg==",
+  "dgSpecHash": "JJy5bTaKjxMY8cSmFvthiB3PAJ7Upmo70jm/qXF9jbKvw4x+/6XRXb/IR0XUdiHVMDZL6jpXsNP7ma6x1nh83g==",
   "success": true,
   "projectFilePath": "/home/coder/project/workspace/dotnetproject/dotnetmvcapp/dotnetmvcapp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/coder/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
