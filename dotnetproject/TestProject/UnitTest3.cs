@@ -1,12 +1,12 @@
 using NUnit.Framework;
-using dotnetwebapiproject.Controllers;
-using dotnetwebapiproject.Models;
+using dotnetmsViewCusomer.Controllers;
+using dotnetmsViewCusomer.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace dotnetwebapiproject.Tests
+namespace dotnetmsViewCusomer.Tests
 {
     [TestFixture]
     public class CustomerControllerTests
