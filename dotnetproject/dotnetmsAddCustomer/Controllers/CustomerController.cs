@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using dotnetwebapiAddCustomer.Models;
+using dotnetmsAddCustomer.Models;
 
-namespace dotnetwebapiAddCustomer.Controllers;
+namespace dotnetmsAddCustomer.Controllers;
 
 [ApiController]
 [Route("[controller]")]
