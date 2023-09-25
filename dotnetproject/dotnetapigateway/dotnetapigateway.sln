@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetapigateway", "dotneta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetmicroserviceone", "..\dotnetmicroserviceone\dotnetmicroserviceone.csproj", "{01B7877E-5827-45D6-BE51-D2DC8C4EB1A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetmicroservicetwo", "..\dotnetmicroservicetwo\dotnetmicroservicetwo.csproj", "{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{01B7877E-5827-45D6-BE51-D2DC8C4EB1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01B7877E-5827-45D6-BE51-D2DC8C4EB1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01B7877E-5827-45D6-BE51-D2DC8C4EB1A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
