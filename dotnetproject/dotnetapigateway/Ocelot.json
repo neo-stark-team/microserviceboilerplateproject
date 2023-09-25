@@ -13,6 +13,20 @@
             "UpstreamHttpMethod": ["POST", "GET"],
             "DownstreamHttpVersion": "2.0",
             "DangerousAcceptAnyServerCertificate": false
+        },
+        {
+            "DownstreamPathTemplate": "/api/Channel",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 8081
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/MyChannels",
+            "UpstreamHttpMethod": ["POST", "GET"],
+            "DownstreamHttpVersion": "2.0",
+            "DangerousAcceptAnyServerCertificate": false
         }
     ]
   }

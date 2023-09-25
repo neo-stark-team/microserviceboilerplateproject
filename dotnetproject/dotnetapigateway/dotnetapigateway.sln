@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetmicroserviceone", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetmicroservicetwo", "..\dotnetmicroservicetwo\dotnetmicroservicetwo.csproj", "{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{60F08153-0504-4403-BEEE-31A501D49443}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E13247C-40FF-4B8F-9B7B-F5F57F391EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F08153-0504-4403-BEEE-31A501D49443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F08153-0504-4403-BEEE-31A501D49443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F08153-0504-4403-BEEE-31A501D49443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F08153-0504-4403-BEEE-31A501D49443}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
